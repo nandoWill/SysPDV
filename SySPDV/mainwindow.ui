@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>505</width>
-    <height>332</height>
+    <width>725</width>
+    <height>350</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,7 +28,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>505</width>
+     <width>725</width>
      <height>27</height>
     </rect>
    </property>
@@ -72,11 +72,18 @@
     <addaction name="actionAtualizar_dados"/>
     <addaction name="actionBuscar_Clientes"/>
    </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionLicen_a_de_uso"/>
+   </widget>
    <addaction name="menuProdutos"/>
    <addaction name="menuFornecedores"/>
    <addaction name="menuVendas"/>
    <addaction name="menuFuncionarios"/>
    <addaction name="menuFidelidade"/>
+   <addaction name="menuAjuda"/>
   </widget>
   <action name="actionCadastrarProduto">
    <property name="text">
@@ -154,6 +161,11 @@
   <action name="actionBuscar_Funcionarios">
    <property name="text">
     <string>Buscar Funcionarios</string>
+   </property>
+  </action>
+  <action name="actionLicen_a_de_uso">
+   <property name="text">
+    <string>Licença de uso</string>
    </property>
   </action>
  </widget>
