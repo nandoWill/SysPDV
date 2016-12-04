@@ -1,24 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>725</width>
+    <height>350</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>725</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProdutos">
+    <property name="title">
+     <string>Produtos</string>
+    </property>
+    <addaction name="actionCadastrarProduto"/>
+    <addaction name="actionAjustar_Produto"/>
+    <addaction name="separator"/>
+    <addaction name="actionReceber_Lote"/>
+    <addaction name="actionVerificar_Estoque"/>
+   </widget>
+   <widget class="QMenu" name="menuFornecedores">
+    <property name="title">
+     <string>Fornecedores</string>
+    </property>
+    <addaction name="actionAdicionar_Fornecedor"/>
+    <addaction name="actionAtualizar_Dados_de_Fornecedor"/>
+   </widget>
+   <widget class="QMenu" name="menuVendas">
+    <property name="title">
+     <string>Vendas</string>
+    </property>
+    <addaction name="actionRealizar_Vendas"/>
+    <addaction name="actionVerificar_Vendas"/>
+   </widget>
+   <widget class="QMenu" name="menuFuncionarios">
+    <property name="title">
+     <string>Funcionarios</string>
+    </property>
+    <addaction name="actionCadastrar_Funcionario"/>
+    <addaction name="actionVerificar_Historico"/>
+    <addaction name="actionBuscar_Funcionarios"/>
+   </widget>
+   <widget class="QMenu" name="menuFidelidade">
+    <property name="title">
+     <string>Fidelidade</string>
+    </property>
+    <addaction name="actionAdicionar_Cliente"/>
+    <addaction name="actionAtualizar_dados"/>
+    <addaction name="actionBuscar_Clientes"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionLicen_a_de_uso"/>
+   </widget>
+   <addaction name="menuProdutos"/>
+   <addaction name="menuFornecedores"/>
+   <addaction name="menuVendas"/>
+   <addaction name="menuFuncionarios"/>
+   <addaction name="menuFidelidade"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <action name="actionCadastrarProduto">
+   <property name="text">
+    <string>CadastrarProduto</string>
+   </property>
+  </action>
+  <action name="actionAjustar_Produto">
+   <property name="text">
+    <string>Ajustar Produto</string>
+   </property>
+  </action>
+  <action name="actionReceber_Lote">
+   <property name="text">
+    <string>Receber Lote</string>
+   </property>
+  </action>
+  <action name="actionVerificar_Estoque">
+   <property name="text">
+    <string>Verificar Estoque</string>
+   </property>
+   <property name="toolTip">
+    <string>Verificar Estoque</string>
+   </property>
+  </action>
+  <action name="actionAdicionar_Fornecedor">
+   <property name="text">
+    <string>Adicionar Fornecedor</string>
+   </property>
+  </action>
+  <action name="actionAtualizar_Dados_de_Fornecedor">
+   <property name="text">
+    <string>Atualizar Dados de Fornecedor</string>
+   </property>
+  </action>
+  <action name="actionRealizar_Vvendas">
+   <property name="text">
+    <string>Realizar Vvendas</string>
+   </property>
+  </action>
+  <action name="actionRealizar_Vendas">
+   <property name="text">
+    <string>Realizar Vendas</string>
+   </property>
+  </action>
+  <action name="actionVerificar_Vendas">
+   <property name="text">
+    <string>Verificar Vendas</string>
+   </property>
+  </action>
+  <action name="actionCadastrar_Funcionario">
+   <property name="text">
+    <string>Cadastrar Funcionario</string>
+   </property>
+  </action>
+  <action name="actionVerificar_Historico">
+   <property name="text">
+    <string>Verificar Historico</string>
+   </property>
+  </action>
+  <action name="actionAdicionar_Cliente">
+   <property name="text">
+    <string>Adicionar Cliente</string>
+   </property>
+  </action>
+  <action name="actionAtualizar_dados">
+   <property name="text">
+    <string>Atualizar dados</string>
+   </property>
+  </action>
+  <action name="actionBuscar_Clientes">
+   <property name="text">
+    <string>Buscar Clientes</string>
+   </property>
+  </action>
+  <action name="actionBuscar_Funcionarios">
+   <property name="text">
+    <string>Buscar Funcionarios</string>
+   </property>
+  </action>
+  <action name="actionLicen_a_de_uso">
+   <property name="text">
+    <string>Licença de uso</string>
+   </property>
+  </action>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
