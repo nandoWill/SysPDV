@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,6 +15,7 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     realizarvenda.cpp \
+<<<<<<< HEAD
     cadastrar.cpp \
     fornecedores.cpp \
     modificarfornecedor.cpp \
@@ -48,3 +49,14 @@ FORMS    += mainwindow.ui \
     adicionarfuncionario.ui \
     funcionarios.ui \
     modificarfuncionarios.ui
+=======
+    verificarvendas.cpp
+
+HEADERS  += mainwindow.h \
+    realizarvenda.h \
+    verificarvendas.h
+
+FORMS    += mainwindow.ui \
+    realizarvenda.ui \
+    verificarvendas.ui
+>>>>>>> master
