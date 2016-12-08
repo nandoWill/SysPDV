@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,13 +15,6 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     realizarvenda.cpp \
-<<<<<<< HEAD
-    verificarvendas.cpp \
-    adcproduto.cpp \
-    receberlote.cpp \
-    verificarlote.cpp
-=======
-<<<<<<< HEAD
     cadastrar.cpp \
     fornecedores.cpp \
     modificarfornecedor.cpp \
@@ -55,28 +48,3 @@ FORMS    += mainwindow.ui \
     adicionarfuncionario.ui \
     funcionarios.ui \
     modificarfuncionarios.ui
-=======
-    verificarvendas.cpp
->>>>>>> origin/master
-
-HEADERS  += mainwindow.h \
-    realizarvenda.h \
-    verificarvendas.h \
-    ../../../Documents/SysPDV-master/SySPDV/adcproduto.h \
-    ../../../Documents/SysPDV-master/SySPDV/receberlote.h \
-    ../../../Documents/SysPDV-master/SySPDV/verificarlote.h \
-    adcproduto.h \
-    receberlote.h \
-    verificarlote.h
-
-FORMS    += mainwindow.ui \
-    realizarvenda.ui \
-<<<<<<< HEAD
-    verificarvendas.ui \
-    adcproduto.ui \
-    receberlote.ui \
-    verificarlote.ui
-=======
-    verificarvendas.ui
->>>>>>> master
->>>>>>> origin/master

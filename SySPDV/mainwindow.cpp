@@ -1,17 +1,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-<<<<<<< HEAD
-#include "adcproduto.h"
-#include "receberlote.h"
-#include "verificarlote.h"
-=======
 #include "cadastrar.h"
 #include "fornecedores.h"
 #include "cadastrarcliente.h"
 #include "cliente.h"
 #include "adicionarfuncionario.h"
 #include "funcionarios.h"
->>>>>>> origin/master
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -22,42 +16,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("root");
-    db.setDatabaseName("syspdv");
-    db.setUserName("usuario");
-    db.setPassword("");
-    bool ok = db.open();
-
-
-
     delete ui;
 }
 
-<<<<<<< HEAD
-void MainWindow::on_actionCadastrarProduto_triggered()
-{
-    adcProduto adcProd;
-    adcProd.setModal(true);
-    adcProd.exec();
-}
-
-
-void MainWindow::on_actionReceber_Lote_triggered()
-{
-    receberlote recebLote;
-    recebLote.setModal(true);
-    recebLote.exec();
-}
-
-
-
-void MainWindow::on_actionVerificar_Estoque_triggered()
-{
-    verificarlote verLote;
-    verLote.setModal(true);
-    verLote.exec();
-=======
 void MainWindow::on_actionAdicionar_Fornecedores_triggered()
 {
     Cadastrar *cadastrarfornecedores = new Cadastrar(this);
@@ -104,5 +65,4 @@ void MainWindow::on_actionBuscar_Funcionario_triggered()
     buscarfuncionarios->setModal(true);
     buscarfuncionarios->show();
     buscarfuncionarios->exec();
->>>>>>> origin/master
 }
