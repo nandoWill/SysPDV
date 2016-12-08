@@ -29,7 +29,7 @@
      <x>0</x>
      <y>0</y>
      <width>725</width>
-     <height>27</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuProdutos">
@@ -46,8 +46,8 @@
     <property name="title">
      <string>Fornecedores</string>
     </property>
-    <addaction name="actionAdicionar_Fornecedor"/>
-    <addaction name="actionAtualizar_Dados_de_Fornecedor"/>
+    <addaction name="actionAdicionar_Fornecedores"/>
+    <addaction name="actionModificar_Fornecedores"/>
    </widget>
    <widget class="QMenu" name="menuVendas">
     <property name="title">
@@ -60,16 +60,18 @@
     <property name="title">
      <string>Funcionarios</string>
     </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
     <addaction name="actionCadastrar_Funcionario"/>
-    <addaction name="actionVerificar_Historico"/>
-    <addaction name="actionBuscar_Funcionarios"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionBuscar_Funcionario"/>
    </widget>
    <widget class="QMenu" name="menuFidelidade">
     <property name="title">
      <string>Fidelidade</string>
     </property>
     <addaction name="actionAdicionar_Cliente"/>
-    <addaction name="actionAtualizar_dados"/>
     <addaction name="actionBuscar_Clientes"/>
    </widget>
    <widget class="QMenu" name="menuAjuda">
@@ -135,12 +137,12 @@
   </action>
   <action name="actionCadastrar_Funcionario">
    <property name="text">
-    <string>Cadastrar Funcionario</string>
+    <string>Adicionar Funcionario</string>
    </property>
   </action>
   <action name="actionVerificar_Historico">
    <property name="text">
-    <string>Verificar Historico</string>
+    <string>Buscar Funcionario</string>
    </property>
   </action>
   <action name="actionAdicionar_Cliente">
@@ -158,14 +160,29 @@
     <string>Buscar Clientes</string>
    </property>
   </action>
-  <action name="actionBuscar_Funcionarios">
-   <property name="text">
-    <string>Buscar Funcionarios</string>
-   </property>
-  </action>
   <action name="actionLicen_a_de_uso">
    <property name="text">
     <string>Licença de uso</string>
+   </property>
+  </action>
+  <action name="actionAdicionar_Fornecedores">
+   <property name="text">
+    <string>Adicionar Fornecedores</string>
+   </property>
+  </action>
+  <action name="actionModificar_Fornecedores">
+   <property name="text">
+    <string>Buscar Fornecedores</string>
+   </property>
+  </action>
+  <action name="actionDeletar_Fornecedores">
+   <property name="text">
+    <string>Deletar Fornecedores</string>
+   </property>
+  </action>
+  <action name="actionBuscar_Funcionario">
+   <property name="text">
+    <string>Buscar Funcionario</string>
    </property>
   </action>
  </widget>

@@ -14,10 +14,37 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    realizarvenda.cpp
+    realizarvenda.cpp \
+    cadastrar.cpp \
+    fornecedores.cpp \
+    modificarfornecedor.cpp \
+    cadastrarcliente.cpp \
+    cliente.cpp \
+    modificarcliente.cpp \
+    adicionarfuncionario.cpp \
+    funcionarios.cpp \
+    modificarfuncionarios.cpp
 
 HEADERS  += mainwindow.h \
-    realizarvenda.h
+    realizarvenda.h \
+    cadastrar.h \
+    fornecedores.h \
+    modificarfornecedor.h \
+    cadastrarcliente.h \
+    cliente.h \
+    modificarcliente.h \
+    adicionarfuncionario.h \
+    funcionarios.h \
+    modificarfuncionarios.h
 
 FORMS    += mainwindow.ui \
-    realizarvenda.ui
+    realizarvenda.ui \
+    cadastrar.ui \
+    fornecedores.ui \
+    modificarfornecedor.ui \
+    cadastrarcliente.ui \
+    cliente.ui \
+    modificarcliente.ui \
+    adicionarfuncionario.ui \
+    funcionarios.ui \
+    modificarfuncionarios.ui
