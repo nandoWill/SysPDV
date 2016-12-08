@@ -15,12 +15,24 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     realizarvenda.cpp \
-    verificarvendas.cpp
+    verificarvendas.cpp \
+    adcproduto.cpp \
+    receberlote.cpp \
+    verificarlote.cpp
 
 HEADERS  += mainwindow.h \
     realizarvenda.h \
-    verificarvendas.h
+    verificarvendas.h \
+    ../../../Documents/SysPDV-master/SySPDV/adcproduto.h \
+    ../../../Documents/SysPDV-master/SySPDV/receberlote.h \
+    ../../../Documents/SysPDV-master/SySPDV/verificarlote.h \
+    adcproduto.h \
+    receberlote.h \
+    verificarlote.h
 
 FORMS    += mainwindow.ui \
     realizarvenda.ui \
-    verificarvendas.ui
+    verificarvendas.ui \
+    adcproduto.ui \
+    receberlote.ui \
+    verificarlote.ui

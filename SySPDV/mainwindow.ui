@@ -29,7 +29,7 @@
      <x>0</x>
      <y>0</y>
      <width>725</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuProdutos">
@@ -97,6 +97,9 @@
   </action>
   <action name="actionReceber_Lote">
    <property name="text">
+    <string>Receber Lote</string>
+   </property>
+   <property name="toolTip">
     <string>Receber Lote</string>
    </property>
   </action>

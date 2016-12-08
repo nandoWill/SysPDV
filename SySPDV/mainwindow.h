@@ -15,6 +15,13 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void on_actionCadastrarProduto_triggered();
+
+    void on_actionReceber_Lote_triggered();
+
+    void on_actionVerificar_Estoque_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
