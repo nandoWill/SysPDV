@@ -14,10 +14,13 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    realizarvenda.cpp
+    realizarvenda.cpp \
+    verificarvendas.cpp
 
 HEADERS  += mainwindow.h \
-    realizarvenda.h
+    realizarvenda.h \
+    verificarvendas.h
 
 FORMS    += mainwindow.ui \
-    realizarvenda.ui
+    realizarvenda.ui \
+    verificarvendas.ui
