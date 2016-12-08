@@ -13,16 +13,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("root");
-    db.setDatabaseName("syspdv");
-    db.setUserName("usuario");
-    db.setPassword("");
-    bool ok = db.open();
 
-
-
-    delete ui;
+       delete ui;
 }
 
 void MainWindow::on_actionCadastrarProduto_triggered()
