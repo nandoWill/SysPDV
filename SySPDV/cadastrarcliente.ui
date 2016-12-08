@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cadastrarCliente</class>
+ <widget class="QDialog" name="cadastrarCliente">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastrar Clientes</string>
+  </property>
+  <widget class="QLabel" name="labelCadastrarCliente">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cadastrar Cliente</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonOkCadastrar">
+   <property name="geometry">
+    <rect>
+     <x>339</x>
+     <y>270</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonCancelarCadastro">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>270</y>
+     <width>61</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>361</width>
+     <height>146</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayoutCadastrarCliente">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutNome">
+      <item>
+       <widget class="QLabel" name="labelNome">
+        <property name="text">
+         <string>Nome:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditNome"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutCPF">
+      <item>
+       <widget class="QLabel" name="labelCPF">
+        <property name="text">
+         <string>CPF:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditCPF"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutTelefone">
+      <item>
+       <widget class="QLabel" name="labelTelefone">
+        <property name="text">
+         <string>Telefone:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditTelefone"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutEndereco">
+      <item>
+       <widget class="QLabel" name="labelEndereco">
+        <property name="text">
+         <string>Endereço:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditEndereco"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutEmail">
+      <item>
+       <widget class="QLabel" name="labelEmail">
+        <property name="text">
+         <string>Email:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditEmail"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

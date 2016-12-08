@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdicionarFuncionario</class>
+ <widget class="QDialog" name="AdicionarFuncionario">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cadastrar Funcionário</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>270</y>
+     <width>61</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>249</x>
+     <y>270</y>
+     <width>61</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>371</width>
+     <height>146</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayoutCadastrarFuncionario">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutNumCarteira">
+      <item>
+       <widget class="QLabel" name="labelNumCarteira">
+        <property name="text">
+         <string>Número da Carteira de Trabalho:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditNumCarteira"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutTelefone">
+      <item>
+       <widget class="QLabel" name="labelTelefone">
+        <property name="text">
+         <string>Telefone:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditTelefone"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutEmail">
+      <item>
+       <widget class="QLabel" name="labelEmail">
+        <property name="text">
+         <string>Email:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditEmail"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutEndereco">
+      <item>
+       <widget class="QLabel" name="labelEndereco">
+        <property name="text">
+         <string>Endereço:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditEndereco"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

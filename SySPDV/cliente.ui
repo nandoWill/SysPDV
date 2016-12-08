@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cliente</class>
+ <widget class="QDialog" name="cliente">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>534</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cliente</string>
+  </property>
+  <widget class="QLabel" name="labelClientes">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>0</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clientes:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelProcurarPorCliente">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Procurar Por:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonOkCliente">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>40</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableViewTabelaCliente">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>90</y>
+     <width>351</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonModificarCliente">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>80</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modificar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonDeletarCliente">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>80</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Deletar</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>411</width>
+     <height>56</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayoutProcurarPor">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutProcurarPor">
+      <item>
+       <widget class="QLabel" name="labelCodigo">
+        <property name="text">
+         <string>Código:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditProcurarPorCodigo"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutProcurarPor_2">
+      <item>
+       <widget class="QLabel" name="labelNome">
+        <property name="text">
+         <string>Nome:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditProcurarPorNome"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
