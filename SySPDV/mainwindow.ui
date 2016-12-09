@@ -29,7 +29,7 @@
      <x>0</x>
      <y>0</y>
      <width>725</width>
-     <height>19</height>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuProdutos">
@@ -117,11 +117,6 @@
   <action name="actionAtualizar_Dados_de_Fornecedor">
    <property name="text">
     <string>Atualizar Dados de Fornecedor</string>
-   </property>
-  </action>
-  <action name="actionRealizar_Vvendas">
-   <property name="text">
-    <string>Realizar Vvendas</string>
    </property>
   </action>
   <action name="actionRealizar_Vendas">

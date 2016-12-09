@@ -38,6 +38,10 @@ private slots:
 
     void on_actionPesquisar_Cliente_triggered();
 
+    void on_actionRealizar_Vendas_triggered();
+
+    void on_actionVerificar_Vendas_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

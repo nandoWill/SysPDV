@@ -22,7 +22,7 @@ static const uint qt_meta_data_MainWindow[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+      13,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -33,6 +33,16 @@ static const uint qt_meta_data_MainWindow[] = {
       12,   11,   11,   11, 0x08,
       50,   11,   11,   11, 0x08,
       84,   11,   11,   11, 0x08,
+     123,   11,   11,   11, 0x08,
+     165,   11,   11,   11, 0x08,
+     209,   11,   11,   11, 0x08,
+     252,   11,   11,   11, 0x08,
+     295,   11,   11,   11, 0x08,
+     334,   11,   11,   11, 0x08,
+     371,   11,   11,   11, 0x08,
+     411,   11,   11,   11, 0x08,
+     450,   11,   11,   11, 0x08,
+     487,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -41,6 +51,16 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "MainWindow\0\0on_actionCadastrarProduto_triggered()\0"
     "on_actionReceber_Lote_triggered()\0"
     "on_actionVerificar_Estoque_triggered()\0"
+    "on_actionAdicionar_Fornecedor_triggered()\0"
+    "on_actionPesquisar_Fornecedores_triggered()\0"
+    "on_actionCadastrar_Funcionario_triggered()\0"
+    "on_actionPesquisar_Funcionario_triggered()\0"
+    "on_actionAdicionar_Cliente_triggered()\0"
+    "on_actionBuscar_Clientes_triggered()\0"
+    "on_actionPesquisar_Clientes_triggered()\0"
+    "on_actionPesquisar_Cliente_triggered()\0"
+    "on_actionRealizar_Vendas_triggered()\0"
+    "on_actionVerificar_Vendas_triggered()\0"
 };
 
 void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -52,6 +72,14 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->on_actionCadastrarProduto_triggered(); break;
         case 1: _t->on_actionReceber_Lote_triggered(); break;
         case 2: _t->on_actionVerificar_Estoque_triggered(); break;
+        case 3: _t->on_actionAdicionar_Fornecedor_triggered(); break;
+        case 4: _t->on_actionPesquisar_Fornecedores_triggered(); break;
+        case 5: _t->on_actionCadastrar_Funcionario_triggered(); break;
+        case 6: _t->on_actionPesquisar_Funcionario_triggered(); break;
+        case 7: _t->on_actionAdicionar_Cliente_triggered(); break;
+        case 10: _t->on_actionPesquisar_Cliente_triggered(); break;
+        case 11: _t->on_actionRealizar_Vendas_triggered(); break;
+        case 12: _t->on_actionVerificar_Vendas_triggered(); break;
         default: ;
         }
     }
@@ -90,9 +118,9 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 13;
     }
     return _id;
 }

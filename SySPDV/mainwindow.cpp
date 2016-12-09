@@ -9,6 +9,8 @@
 #include "funcionarios.h"
 #include "cadastrarcliente.h"
 #include "cliente.h"
+#include "realizarvenda.h"
+#include "verificarvendas.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -94,4 +96,18 @@ void MainWindow::on_actionPesquisar_Cliente_triggered()
     psqCliente->setModal(true);
     psqCliente->show();
     psqCliente->exec();
+}
+
+void MainWindow::on_actionRealizar_Vendas_triggered()
+{
+    RealizarVenda RealizarVendaObject;
+    RealizarVendaObject.setModal(true);
+    RealizarVendaObject.exec();
+}
+
+void MainWindow::on_actionVerificar_Vendas_triggered()
+{
+    VerificarVendas VerificarVendasObject;
+    VerificarVendasObject.setModal(true);
+    VerificarVendasObject.exec();
 }

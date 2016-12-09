@@ -47,7 +47,6 @@ void modificarFornecedor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         Q_ASSERT(staticMetaObject.cast(_o));
         modificarFornecedor *_t = static_cast<modificarFornecedor *>(_o);
         switch (_id) {
-        case 0: _t->on_pushButton_2_clicked(); break;
         case 1: _t->on_pushButtonCancelarModificarDados_clicked(); break;
         default: ;
         }
