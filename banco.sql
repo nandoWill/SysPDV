@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `syspdv` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `syspdv`;
 -- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
 --
 -- Host: localhost    Database: syspdv
@@ -82,6 +80,7 @@ CREATE TABLE `funcionario` (
   `telefone_funcionario` varchar(13) NOT NULL,
   `email_funcionario` varchar(45) NOT NULL,
   `pontos_funcionario` int(11) NOT NULL,
+  `Nome` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`CT`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -140,8 +139,8 @@ CREATE TABLE `lote` (
   PRIMARY KEY (`idLote`),
   KEY `fk_Lote_1_idx` (`cod_produto`),
   KEY `fk_Lote_2_idx` (`idFornecedor`),
-  CONSTRAINT `fk_Lote_Fornecedor` FOREIGN KEY (`idFornecedor`) REFERENCES `fornecedor` (`idFornecedor`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Lote_Produto` FOREIGN KEY (`cod_produto`) REFERENCES `produto` (`cod_produto`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_Lote_1` FOREIGN KEY (`cod_produto`) REFERENCES `produto` (`cod_produto`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Lote_2` FOREIGN KEY (`idFornecedor`) REFERENCES `fornecedor` (`idFornecedor`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -194,8 +193,8 @@ CREATE TABLE `venda` (
   PRIMARY KEY (`idVenda`),
   KEY `fk_Venda_1_idx` (`CPF`),
   KEY `fk_Venda_2_idx` (`CT`),
-  CONSTRAINT `fk_Venda_Fidelidade` FOREIGN KEY (`CPF`) REFERENCES `fidelidade` (`CPF`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Venda_Funcionario` FOREIGN KEY (`CT`) REFERENCES `funcionario` (`CT`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_Venda_1` FOREIGN KEY (`CPF`) REFERENCES `fidelidade` (`CPF`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Venda_2` FOREIGN KEY (`CT`) REFERENCES `funcionario` (`CT`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -217,4 +216,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-12-08 18:16:17
+-- Dump completed on 2016-12-09  1:48:01
