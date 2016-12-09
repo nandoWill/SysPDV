@@ -17,3 +17,10 @@ void modificarFornecedor::on_pushButtonCancelarModificarDados_clicked()
 {
     close();
 }
+
+void modificarFornecedor::on_pushButtonOkModificarDado_clicked()
+{
+    QString Nome = ui->lineEditNome ->text();
+    QString Telefone = ui->lineEditTelefone->text();
+    QString Endereco = ui->lineEditEndereco->text();
+}

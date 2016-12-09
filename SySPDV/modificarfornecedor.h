@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButtonCancelarModificarDados_clicked();
 
+    void on_pushButtonOkModificarDado_clicked();
+
 private:
     Ui::modificarFornecedor *ui;
 };

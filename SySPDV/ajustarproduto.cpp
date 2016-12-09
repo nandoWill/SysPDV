@@ -12,3 +12,9 @@ AjustarProduto::~AjustarProduto()
 {
     delete ui;
 }
+
+void AjustarProduto::on_Ajustar_clicked()
+{
+    QString Codigo= ui->CodLine->text();
+    QString Preco= ui->PrecoLine->text();
+}

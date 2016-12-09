@@ -64,7 +64,7 @@
     <string>Menu Principal</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -128,7 +128,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineProduto"/>
+         <widget class="QLineEdit" name="ProdutoLine"/>
         </item>
        </layout>
       </item>

@@ -30,3 +30,9 @@ void cliente::on_pushButtonModificarCliente_clicked()
     modificar->show();
     modificar->exec();
 }
+
+void cliente::on_pushButtonOkCliente_clicked()
+{
+    QString Codigo= ui->lineEditProcurarPorCodigo->text();
+    QString nome= ui->lineEditProcurarPorNome->text();
+}

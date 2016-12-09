@@ -15,6 +15,9 @@ public:
     explicit AjustarProduto(QWidget *parent = 0);
     ~AjustarProduto();
 
+private slots:
+    void on_Ajustar_clicked();
+
 private:
     Ui::AjustarProduto *ui;
 };

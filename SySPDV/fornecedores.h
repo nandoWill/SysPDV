@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButtonModificar_clicked();
 
+    void on_pushButtonOkProcurarPor_clicked();
+
 private:
     Ui::Fornecedores *ui;
 };

@@ -15,6 +15,9 @@ public:
     explicit RealizarVenda(QWidget *parent = 0);
     ~RealizarVenda();
 
+private slots:
+    void on_Inserir_clicked();
+
 private:
     Ui::RealizarVenda *ui;
 };

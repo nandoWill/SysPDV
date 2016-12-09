@@ -12,3 +12,9 @@ RealizarVenda::~RealizarVenda()
 {
     delete ui;
 }
+
+void RealizarVenda::on_Inserir_clicked()
+{
+    QString Codproduto = ui->codigoline->text();
+    QString qtd = ui->qtdline->text();
+}

@@ -18,7 +18,7 @@
     <rect>
      <x>200</x>
      <y>10</y>
-     <width>121</width>
+     <width>131</width>
      <height>16</height>
     </rect>
    </property>
@@ -42,20 +42,20 @@
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>110</y>
-     <width>341</width>
-     <height>192</height>
+     <x>120</x>
+     <y>140</y>
+     <width>321</width>
+     <height>161</height>
     </rect>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>30</y>
      <width>411</width>
-     <height>76</height>
+     <height>105</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -71,7 +71,7 @@
       <item>
        <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>TextLabel</string>
+         <string>Carteira de Trabalho</string>
         </property>
        </widget>
       </item>
@@ -85,7 +85,7 @@
       <item>
        <widget class="QLabel" name="label_4">
         <property name="text">
-         <string>TextLabel</string>
+         <string>Nome</string>
         </property>
        </widget>
       </item>
@@ -96,13 +96,13 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>150</y>
-     <width>82</width>
-     <height>52</height>
+     <width>87</width>
+     <height>70</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">

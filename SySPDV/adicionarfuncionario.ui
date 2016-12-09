@@ -18,7 +18,7 @@
     <rect>
      <x>120</x>
      <y>20</y>
-     <width>141</width>
+     <width>161</width>
      <height>16</height>
     </rect>
    </property>
@@ -52,69 +52,87 @@
     <string>Cancelar</string>
    </property>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>50</y>
-     <width>371</width>
-     <height>146</height>
+     <width>376</width>
+     <height>203</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayoutCadastrarFuncionario">
+   <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutNumCarteira">
+     <layout class="QVBoxLayout" name="verticalLayoutCadastrarFuncionario">
       <item>
-       <widget class="QLabel" name="labelNumCarteira">
-        <property name="text">
-         <string>Número da Carteira de Trabalho:</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayoutNumCarteira">
+        <item>
+         <widget class="QLabel" name="labelNumCarteira">
+          <property name="text">
+           <string>Número da Carteira de Trabalho:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditNumCarteira"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEditNumCarteira"/>
+       <layout class="QHBoxLayout" name="horizontalLayoutTelefone">
+        <item>
+         <widget class="QLabel" name="labelTelefone">
+          <property name="text">
+           <string>Telefone:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditTelefone"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutEmail">
+        <item>
+         <widget class="QLabel" name="labelEmail">
+          <property name="text">
+           <string>Email:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditEmail"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutEndereco">
+        <item>
+         <widget class="QLabel" name="labelEndereco">
+          <property name="text">
+           <string>Endereço:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditEndereco"/>
+        </item>
+       </layout>
       </item>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutTelefone">
+     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QLabel" name="labelTelefone">
+       <widget class="QLabel" name="Nome">
         <property name="text">
-         <string>Telefone:</string>
+         <string>Nome</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEditTelefone"/>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutEmail">
-      <item>
-       <widget class="QLabel" name="labelEmail">
-        <property name="text">
-         <string>Email:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditEmail"/>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutEndereco">
-      <item>
-       <widget class="QLabel" name="labelEndereco">
-        <property name="text">
-         <string>Endereço:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditEndereco"/>
+       <widget class="QLineEdit" name="lineEditNome"/>
       </item>
      </layout>
     </item>

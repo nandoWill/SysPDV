@@ -18,6 +18,8 @@ public:
 private slots:
     void on_pushButtonCancelarCadastro_clicked();
 
+    void on_pushButtonOkCadastrar_clicked();
+
 private:
     Ui::Cadastrar *ui;
 };

@@ -17,3 +17,11 @@ void ModificarFuncionarios::on_pushButtonCancelarModificar_clicked()
 {
     close();
 }
+
+void ModificarFuncionarios::on_pushButtonOkModificar_clicked()
+{
+    QString CT = ui->lineEditNumCarteiraTrabalho ->text();
+    QString Telefone = ui-> lineEditTelefone ->text();
+    QString Email = ui->lineEditEmail->text();
+    QString Endereco = ui->lineEditEndereco->text();
+}

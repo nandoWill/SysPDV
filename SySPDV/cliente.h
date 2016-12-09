@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButtonModificarCliente_clicked();
 
+    void on_pushButtonOkCliente_clicked();
+
 private:
     Ui::cliente *ui;
 };

@@ -18,6 +18,8 @@ public:
 private slots:
     void on_pushButtonCancelarModificar_clicked();
 
+    void on_pushButtonOkModificar_clicked();
+
 private:
     Ui::modificarCliente *ui;
 };

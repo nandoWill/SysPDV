@@ -41,7 +41,7 @@
     <rect>
      <x>210</x>
      <y>290</y>
-     <width>101</width>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
@@ -118,15 +118,7 @@
     </rect>
    </property>
   </widget>
-  <zorder>label_2</zorder>
-  <zorder>lineEdit</zorder>
   <zorder>pushButton</zorder>
-  <zorder>lineEdit_3</zorder>
-  <zorder>label_7</zorder>
-  <zorder>lineEdit_4</zorder>
-  <zorder>label_8</zorder>
-  <zorder>label_7</zorder>
-  <zorder>lineEdit_3</zorder>
   <zorder>lineEdit_4</zorder>
   <zorder>label_8</zorder>
   <zorder>lineEdit_3</zorder>

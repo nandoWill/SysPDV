@@ -15,6 +15,9 @@ public:
     explicit receberlote(QWidget *parent = 0);
     ~receberlote();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::receberlote *ui;
 };

@@ -30,3 +30,9 @@ void Fornecedores::on_pushButtonModificar_clicked()
     modificar->show();
     modificar->exec();
 }
+
+void Fornecedores::on_pushButtonOkProcurarPor_clicked()
+{
+    QString Nome= ui->lineEdit->text();
+    QString Codigo= ui->lineEditProcurarPor->text();
+}

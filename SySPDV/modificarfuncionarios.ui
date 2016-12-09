@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>596</width>
+    <height>323</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <rect>
      <x>100</x>
      <y>10</y>
-     <width>201</width>
+     <width>241</width>
      <height>16</height>
     </rect>
    </property>
@@ -52,13 +52,13 @@
     <string>Cancelar</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>50</y>
-     <width>371</width>
-     <height>116</height>
+     <width>541</width>
+     <height>161</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayoutDadosFuncionario">

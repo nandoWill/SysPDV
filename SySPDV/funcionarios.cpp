@@ -23,3 +23,11 @@ void funcionarios::on_pushButton_2_clicked()
     modificarfuncionario->show();
     modificarfuncionario->exec();
 }
+
+void funcionarios::on_pushButton_clicked()
+{
+     QString CT= ui->lineEdit->text();
+     QString Nome= ui->lineEdit_2->text();
+
+
+}
