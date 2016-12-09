@@ -42,6 +42,8 @@ private slots:
 
     void on_actionVerificar_Vendas_triggered();
 
+    void on_actionAjustar_Produto_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

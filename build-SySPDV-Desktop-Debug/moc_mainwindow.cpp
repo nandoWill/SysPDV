@@ -22,7 +22,7 @@ static const uint qt_meta_data_MainWindow[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -43,6 +43,7 @@ static const uint qt_meta_data_MainWindow[] = {
      411,   11,   11,   11, 0x08,
      450,   11,   11,   11, 0x08,
      487,   11,   11,   11, 0x08,
+     525,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -61,6 +62,7 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "on_actionPesquisar_Cliente_triggered()\0"
     "on_actionRealizar_Vendas_triggered()\0"
     "on_actionVerificar_Vendas_triggered()\0"
+    "on_actionAjustar_Produto_triggered()\0"
 };
 
 void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -80,6 +82,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 10: _t->on_actionPesquisar_Cliente_triggered(); break;
         case 11: _t->on_actionRealizar_Vendas_triggered(); break;
         case 12: _t->on_actionVerificar_Vendas_triggered(); break;
+        case 13: _t->on_actionAjustar_Produto_triggered(); break;
         default: ;
         }
     }
@@ -118,9 +121,9 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 14;
     }
     return _id;
 }

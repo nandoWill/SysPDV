@@ -27,7 +27,8 @@ SOURCES += main.cpp\
     funcionarios.cpp \
     modificarcliente.cpp \
     modificarfornecedor.cpp \
-    modificarfuncionarios.cpp
+    modificarfuncionarios.cpp \
+    ajustarproduto.cpp
 
 HEADERS  += mainwindow.h \
     realizarvenda.h \
@@ -46,7 +47,8 @@ HEADERS  += mainwindow.h \
     funcionarios.h \
     modificarcliente.h \
     modificarfornecedor.h \
-    modificarfuncionarios.h
+    modificarfuncionarios.h \
+    ajustarproduto.h
 
 FORMS    += mainwindow.ui \
     realizarvenda.ui \
@@ -62,4 +64,5 @@ FORMS    += mainwindow.ui \
     funcionarios.ui \
     modificarcliente.ui \
     modificarfornecedor.ui \
-    modificarfuncionarios.ui
+    modificarfuncionarios.ui \
+    ajustarproduto.ui

@@ -11,6 +11,7 @@
 #include "cliente.h"
 #include "realizarvenda.h"
 #include "verificarvendas.h"
+#include "ajustarproduto.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -110,4 +111,11 @@ void MainWindow::on_actionVerificar_Vendas_triggered()
     VerificarVendas VerificarVendasObject;
     VerificarVendasObject.setModal(true);
     VerificarVendasObject.exec();
+}
+
+void MainWindow::on_actionAjustar_Produto_triggered()
+{
+    AjustarProduto AjustarProdutoObject;
+    AjustarProdutoObject.setModal(true);
+    AjustarProdutoObject.exec();
 }
