@@ -29,7 +29,7 @@ class Ui_RealizarVenda
 {
 public:
     QPushButton *Inserir;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
@@ -39,10 +39,11 @@ public:
     QLabel *quantidade;
     QLineEdit *qtdline;
     QTableView *tableView;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_3;
     QPushButton *Remover;
     QPushButton *Concluir;
+    QPushButton *MenuPrincipal;
 
     void setupUi(QDialog *RealizarVenda)
     {
@@ -52,22 +53,22 @@ public:
         Inserir = new QPushButton(RealizarVenda);
         Inserir->setObjectName(QStringLiteral("Inserir"));
         Inserir->setGeometry(QRect(570, 90, 81, 31));
-        widget = new QWidget(RealizarVenda);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(70, 40, 491, 278));
-        verticalLayout_2 = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(RealizarVenda);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(30, 27, 531, 291));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        codigo = new QLabel(widget);
+        codigo = new QLabel(layoutWidget);
         codigo->setObjectName(QStringLiteral("codigo"));
 
         horizontalLayout->addWidget(codigo);
 
-        codigoline = new QLineEdit(widget);
+        codigoline = new QLineEdit(layoutWidget);
         codigoline->setObjectName(QStringLiteral("codigoline"));
         codigoline->setMaxLength(13);
 
@@ -78,12 +79,12 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        quantidade = new QLabel(widget);
+        quantidade = new QLabel(layoutWidget);
         quantidade->setObjectName(QStringLiteral("quantidade"));
 
         horizontalLayout_2->addWidget(quantidade);
 
-        qtdline = new QLineEdit(widget);
+        qtdline = new QLineEdit(layoutWidget);
         qtdline->setObjectName(QStringLiteral("qtdline"));
 
         horizontalLayout_2->addWidget(qtdline);
@@ -94,27 +95,30 @@ public:
 
         verticalLayout_2->addLayout(verticalLayout);
 
-        tableView = new QTableView(widget);
+        tableView = new QTableView(layoutWidget);
         tableView->setObjectName(QStringLiteral("tableView"));
 
         verticalLayout_2->addWidget(tableView);
 
-        widget1 = new QWidget(RealizarVenda);
-        widget1->setObjectName(QStringLiteral("widget1"));
-        widget1->setGeometry(QRect(460, 320, 198, 33));
-        horizontalLayout_3 = new QHBoxLayout(widget1);
+        layoutWidget1 = new QWidget(RealizarVenda);
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(460, 320, 198, 33));
+        horizontalLayout_3 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
-        Remover = new QPushButton(widget1);
+        Remover = new QPushButton(layoutWidget1);
         Remover->setObjectName(QStringLiteral("Remover"));
 
         horizontalLayout_3->addWidget(Remover);
 
-        Concluir = new QPushButton(widget1);
+        Concluir = new QPushButton(layoutWidget1);
         Concluir->setObjectName(QStringLiteral("Concluir"));
 
         horizontalLayout_3->addWidget(Concluir);
 
+        MenuPrincipal = new QPushButton(RealizarVenda);
+        MenuPrincipal->setObjectName(QStringLiteral("MenuPrincipal"));
+        MenuPrincipal->setGeometry(QRect(30, 320, 95, 31));
 
         retranslateUi(RealizarVenda);
 
@@ -130,6 +134,7 @@ public:
         quantidade->setText(QApplication::translate("RealizarVenda", "Quantidade", 0));
         Remover->setText(QApplication::translate("RealizarVenda", "Remover", 0));
         Concluir->setText(QApplication::translate("RealizarVenda", "Concluir", 0));
+        MenuPrincipal->setText(QApplication::translate("RealizarVenda", "Menu Principal", 0));
     } // retranslateUi
 
 };

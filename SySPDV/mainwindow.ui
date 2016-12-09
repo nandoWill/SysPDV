@@ -29,7 +29,7 @@
      <x>0</x>
      <y>0</y>
      <width>725</width>
-     <height>21</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuProdutos">
@@ -47,7 +47,7 @@
      <string>Fornecedores</string>
     </property>
     <addaction name="actionAdicionar_Fornecedor"/>
-    <addaction name="actionAtualizar_Dados_de_Fornecedor"/>
+    <addaction name="actionPesquisar_Fornecedores"/>
    </widget>
    <widget class="QMenu" name="menuVendas">
     <property name="title">
@@ -61,16 +61,14 @@
      <string>Funcionarios</string>
     </property>
     <addaction name="actionCadastrar_Funcionario"/>
-    <addaction name="actionVerificar_Historico"/>
-    <addaction name="actionBuscar_Funcionarios"/>
+    <addaction name="actionPesquisar_Funcionario"/>
    </widget>
    <widget class="QMenu" name="menuFidelidade">
     <property name="title">
      <string>Fidelidade</string>
     </property>
     <addaction name="actionAdicionar_Cliente"/>
-    <addaction name="actionAtualizar_dados"/>
-    <addaction name="actionBuscar_Clientes"/>
+    <addaction name="actionPesquisar_Cliente"/>
    </widget>
    <widget class="QMenu" name="menuAjuda">
     <property name="title">
@@ -138,7 +136,7 @@
   </action>
   <action name="actionCadastrar_Funcionario">
    <property name="text">
-    <string>Cadastrar Funcionario</string>
+    <string>Adicionar Funcionarios</string>
    </property>
   </action>
   <action name="actionVerificar_Historico">
@@ -156,19 +154,24 @@
     <string>Atualizar dados</string>
    </property>
   </action>
-  <action name="actionBuscar_Clientes">
-   <property name="text">
-    <string>Buscar Clientes</string>
-   </property>
-  </action>
-  <action name="actionBuscar_Funcionarios">
-   <property name="text">
-    <string>Buscar Funcionarios</string>
-   </property>
-  </action>
   <action name="actionLicen_a_de_uso">
    <property name="text">
     <string>Licença de uso</string>
+   </property>
+  </action>
+  <action name="actionPesquisar_Fornecedores">
+   <property name="text">
+    <string>Pesquisar Fornecedores</string>
+   </property>
+  </action>
+  <action name="actionPesquisar_Funcionario">
+   <property name="text">
+    <string>Pesquisar Funcionario</string>
+   </property>
+  </action>
+  <action name="actionPesquisar_Cliente">
+   <property name="text">
+    <string>Pesquisar Cliente</string>
    </property>
   </action>
  </widget>

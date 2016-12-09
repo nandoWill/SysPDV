@@ -39,12 +39,10 @@ public:
     QAction *actionVerificar_Historico;
     QAction *actionAdicionar_Cliente;
     QAction *actionAtualizar_dados;
-    QAction *actionBuscar_Clientes;
     QAction *actionLicen_a_de_uso;
-    QAction *actionAdicionar_Fornecedores;
-    QAction *actionModificar_Fornecedores;
-    QAction *actionDeletar_Fornecedores;
-    QAction *actionBuscar_Funcionario;
+    QAction *actionPesquisar_Fornecedores;
+    QAction *actionPesquisar_Funcionario;
+    QAction *actionPesquisar_Cliente;
     QWidget *centralWidget;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -87,18 +85,14 @@ public:
         actionAdicionar_Cliente->setObjectName(QStringLiteral("actionAdicionar_Cliente"));
         actionAtualizar_dados = new QAction(MainWindow);
         actionAtualizar_dados->setObjectName(QStringLiteral("actionAtualizar_dados"));
-        actionBuscar_Clientes = new QAction(MainWindow);
-        actionBuscar_Clientes->setObjectName(QStringLiteral("actionBuscar_Clientes"));
         actionLicen_a_de_uso = new QAction(MainWindow);
         actionLicen_a_de_uso->setObjectName(QStringLiteral("actionLicen_a_de_uso"));
-        actionAdicionar_Fornecedores = new QAction(MainWindow);
-        actionAdicionar_Fornecedores->setObjectName(QStringLiteral("actionAdicionar_Fornecedores"));
-        actionModificar_Fornecedores = new QAction(MainWindow);
-        actionModificar_Fornecedores->setObjectName(QStringLiteral("actionModificar_Fornecedores"));
-        actionDeletar_Fornecedores = new QAction(MainWindow);
-        actionDeletar_Fornecedores->setObjectName(QStringLiteral("actionDeletar_Fornecedores"));
-        actionBuscar_Funcionario = new QAction(MainWindow);
-        actionBuscar_Funcionario->setObjectName(QStringLiteral("actionBuscar_Funcionario"));
+        actionPesquisar_Fornecedores = new QAction(MainWindow);
+        actionPesquisar_Fornecedores->setObjectName(QStringLiteral("actionPesquisar_Fornecedores"));
+        actionPesquisar_Funcionario = new QAction(MainWindow);
+        actionPesquisar_Funcionario->setObjectName(QStringLiteral("actionPesquisar_Funcionario"));
+        actionPesquisar_Cliente = new QAction(MainWindow);
+        actionPesquisar_Cliente->setObjectName(QStringLiteral("actionPesquisar_Cliente"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         MainWindow->setCentralWidget(centralWidget);
@@ -136,18 +130,14 @@ public:
         menuProdutos->addSeparator();
         menuProdutos->addAction(actionReceber_Lote);
         menuProdutos->addAction(actionVerificar_Estoque);
-        menuFornecedores->addAction(actionAdicionar_Fornecedores);
-        menuFornecedores->addAction(actionModificar_Fornecedores);
+        menuFornecedores->addAction(actionAdicionar_Fornecedor);
+        menuFornecedores->addAction(actionPesquisar_Fornecedores);
         menuVendas->addAction(actionRealizar_Vendas);
         menuVendas->addAction(actionVerificar_Vendas);
-        menuFuncionarios->addSeparator();
-        menuFuncionarios->addSeparator();
         menuFuncionarios->addAction(actionCadastrar_Funcionario);
-        menuFuncionarios->addSeparator();
-        menuFuncionarios->addSeparator();
-        menuFuncionarios->addAction(actionBuscar_Funcionario);
+        menuFuncionarios->addAction(actionPesquisar_Funcionario);
         menuFidelidade->addAction(actionAdicionar_Cliente);
-        menuFidelidade->addAction(actionBuscar_Clientes);
+        menuFidelidade->addAction(actionPesquisar_Cliente);
         menuAjuda->addAction(actionLicen_a_de_uso);
 
         retranslateUi(MainWindow);
@@ -161,6 +151,9 @@ public:
         actionCadastrarProduto->setText(QApplication::translate("MainWindow", "CadastrarProduto", 0));
         actionAjustar_Produto->setText(QApplication::translate("MainWindow", "Ajustar Produto", 0));
         actionReceber_Lote->setText(QApplication::translate("MainWindow", "Receber Lote", 0));
+#ifndef QT_NO_TOOLTIP
+        actionReceber_Lote->setToolTip(QApplication::translate("MainWindow", "Receber Lote", 0));
+#endif // QT_NO_TOOLTIP
         actionVerificar_Estoque->setText(QApplication::translate("MainWindow", "Verificar Estoque", 0));
 #ifndef QT_NO_TOOLTIP
         actionVerificar_Estoque->setToolTip(QApplication::translate("MainWindow", "Verificar Estoque", 0));
@@ -170,16 +163,14 @@ public:
         actionRealizar_Vvendas->setText(QApplication::translate("MainWindow", "Realizar Vvendas", 0));
         actionRealizar_Vendas->setText(QApplication::translate("MainWindow", "Realizar Vendas", 0));
         actionVerificar_Vendas->setText(QApplication::translate("MainWindow", "Verificar Vendas", 0));
-        actionCadastrar_Funcionario->setText(QApplication::translate("MainWindow", "Adicionar Funcionario", 0));
-        actionVerificar_Historico->setText(QApplication::translate("MainWindow", "Buscar Funcionario", 0));
+        actionCadastrar_Funcionario->setText(QApplication::translate("MainWindow", "Adicionar Funcionarios", 0));
+        actionVerificar_Historico->setText(QApplication::translate("MainWindow", "Verificar Historico", 0));
         actionAdicionar_Cliente->setText(QApplication::translate("MainWindow", "Adicionar Cliente", 0));
         actionAtualizar_dados->setText(QApplication::translate("MainWindow", "Atualizar dados", 0));
-        actionBuscar_Clientes->setText(QApplication::translate("MainWindow", "Buscar Clientes", 0));
         actionLicen_a_de_uso->setText(QApplication::translate("MainWindow", "Licen\303\247a de uso", 0));
-        actionAdicionar_Fornecedores->setText(QApplication::translate("MainWindow", "Adicionar Fornecedores", 0));
-        actionModificar_Fornecedores->setText(QApplication::translate("MainWindow", "Buscar Fornecedores", 0));
-        actionDeletar_Fornecedores->setText(QApplication::translate("MainWindow", "Deletar Fornecedores", 0));
-        actionBuscar_Funcionario->setText(QApplication::translate("MainWindow", "Buscar Funcionario", 0));
+        actionPesquisar_Fornecedores->setText(QApplication::translate("MainWindow", "Pesquisar Fornecedores", 0));
+        actionPesquisar_Funcionario->setText(QApplication::translate("MainWindow", "Pesquisar Funcionario", 0));
+        actionPesquisar_Cliente->setText(QApplication::translate("MainWindow", "Pesquisar Cliente", 0));
         menuProdutos->setTitle(QApplication::translate("MainWindow", "Produtos", 0));
         menuFornecedores->setTitle(QApplication::translate("MainWindow", "Fornecedores", 0));
         menuVendas->setTitle(QApplication::translate("MainWindow", "Vendas", 0));

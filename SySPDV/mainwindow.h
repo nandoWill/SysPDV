@@ -22,6 +22,22 @@ private slots:
 
     void on_actionVerificar_Estoque_triggered();
 
+    void on_actionAdicionar_Fornecedor_triggered();
+
+    void on_actionPesquisar_Fornecedores_triggered();
+
+    void on_actionCadastrar_Funcionario_triggered();
+
+    void on_actionPesquisar_Funcionario_triggered();
+
+    void on_actionAdicionar_Cliente_triggered();
+
+    void on_actionBuscar_Clientes_triggered();
+
+    void on_actionPesquisar_Clientes_triggered();
+
+    void on_actionPesquisar_Cliente_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
